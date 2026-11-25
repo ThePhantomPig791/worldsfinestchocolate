@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "worldsfinestchocolate:chocolate_bar",
+    "#c:chocolates",
     "worldsfinest:ant_bottle"
   ],
   "result": {
