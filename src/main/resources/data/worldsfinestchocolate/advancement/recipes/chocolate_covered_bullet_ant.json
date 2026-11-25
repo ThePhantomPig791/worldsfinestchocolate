@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ant_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "worldsfinest:bullet_ant_bottle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "worldsfinestchocolate:chocolate_covered_bullet_ant"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_ant_bottle",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "worldsfinestchocolate:chocolate_covered_bullet_ant"
+    ]
+  }
+}

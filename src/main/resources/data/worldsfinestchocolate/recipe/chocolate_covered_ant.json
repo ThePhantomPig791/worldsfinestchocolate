@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "worldsfinestchocolate:chocolate_bar",
+    "worldsfinest:ant_bottle"
+  ],
+  "result": {
+    "id": "worldsfinestchocolate:chocolate_covered_ant"
+  }
+}
