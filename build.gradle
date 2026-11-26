@@ -82,7 +82,7 @@ configurations {
 }
 
 dependencies {
-    implementation ("maven.modrinth:worldsfinest:1.0.0+26.1.2") { exclude group: "net.threetag", module: "palladium" }
+    implementation ("maven.modrinth:worldsfinest:1.0.0+26.1.2")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

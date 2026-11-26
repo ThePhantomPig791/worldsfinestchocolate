@@ -1,6 +1,5 @@
 package net.phantompig.worldsfinestchocolate.item;
 
-import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -18,7 +17,6 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.phantompig.worldsfinestchocolate.WorldsFinestChocolate;
-import net.threetag.worldsfinest.item.WFItems;
 
 import java.util.List;
 

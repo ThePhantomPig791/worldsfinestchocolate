@@ -1,5 +1,6 @@
 package net.phantompig.worldsfinestchocolate;
 
+import net.neoforged.fml.config.ModConfig;
 import net.phantompig.worldsfinestchocolate.item.WFCItems;
 import org.slf4j.Logger;
 
@@ -16,6 +17,8 @@ public class WorldsFinestChocolate {
 
     public WorldsFinestChocolate(IEventBus modEventBus, ModContainer modContainer) {
         WFCItems.init(modEventBus);
+
+        modContainer.registerConfig(ModConfig.Type.SERVER, WFCConfig.SPEC);
 
         LOGGER.info("World's Finest Chocolate initialized 😋");
     }
