@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "worldsfinestchocolate:chocolate_with_nuts"
+  ],
+  "result": {
+    "id": "worldsfinestchocolate:wrapped_chocolate_with_nuts"
+  }
+}

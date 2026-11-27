@@ -26,7 +26,9 @@
   ],
   "rewards": {
     "recipes": [
-      "worldsfinestchocolate:chocolate_covered_acorn"
+      "worldsfinestchocolate:chocolate_covered_acorn",
+      "worldsfinestchocolate:chocolate_with_nuts",
+      "worldsfinestchocolate:wrapped_chocolate_with_nuts"
     ]
   }
 }

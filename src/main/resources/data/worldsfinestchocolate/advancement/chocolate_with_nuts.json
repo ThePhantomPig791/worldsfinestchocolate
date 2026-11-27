@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "has_chocolate_with_nuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "worldsfinestchocolate:wrapped_chocolate_with_nuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "id": "worldsfinestchocolate:wrapped_chocolate_with_nuts"
+    },
+    "title": {
+      "translate": "advancements.worldsfinestchocolate.chocolate_with_nuts.title"
+    },
+    "description": {
+      "translate": "advancements.worldsfinestchocolate.chocolate_with_nuts.description"
+    }
+  },
+  "requirements": [
+    [
+      "has_chocolate_with_nuts"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

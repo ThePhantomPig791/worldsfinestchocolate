@@ -4,7 +4,12 @@
   "item.worldsfinestchocolate.chocolate_covered_bullet_ant": "Chocolate-Covered Bullet Ant",
   "item.worldsfinestchocolate.chocolate_covered_carpenter_ant": "Chocolate-Covered Carpenter Ant",
   "item.worldsfinestchocolate.chocolate_covered_acorn": "Chocolate-Covered Acorn",
+  "item.worldsfinestchocolate.chocolate_with_nuts": "Chocolate with Nuts",
+  "item.worldsfinestchocolate.wrapped_chocolate_with_nuts": "Chocolate with Nuts",
   "item.worldsfinestchocolate.chocolate_covered_heart_of_the_swamp": "Chocolate-Covered Heart of the Swamp",
+
+  "advancements.worldsfinestchocolate.chocolate_with_nuts.title": "Entrepreneurs",
+  "advancements.worldsfinestchocolate.chocolate_with_nuts.description": "Wrap a delicious Chocolate with Nuts",
 
   "worldsfinestchocolate.configuration.throwShrunkenStructureType": "Throw Shrunken Structure Type",
   "worldsfinestchocolate.configuration.allowSelfDisc": "Allow Self Pym Disc",
