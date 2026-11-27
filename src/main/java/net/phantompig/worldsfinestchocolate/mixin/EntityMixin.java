@@ -22,6 +22,7 @@ public abstract class EntityMixin {
         WorldsFinestChocolate.LOGGER.info("attacked: {} is a {}", (Entity) ((Object) this), ((Entity) ((Object) this)).getClass().toString());
         return this.wfc$isShrunkenSuitItem() || original.call();
     }
+    // TODO fix. it just don't work. projectiles go right through
 
     @Unique
     private boolean wfc$isShrunkenSuitItem() {

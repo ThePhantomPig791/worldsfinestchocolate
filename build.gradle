@@ -82,7 +82,8 @@ configurations {
 }
 
 dependencies {
-    implementation ("maven.modrinth:worldsfinest:1.0.0+26.1.2")
+    implementation ("maven.modrinth:threetag-palladium:5.0.0+26.1.2")
+    implementation ("maven.modrinth:worlds-finest:1.0.0+26.1.2")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
