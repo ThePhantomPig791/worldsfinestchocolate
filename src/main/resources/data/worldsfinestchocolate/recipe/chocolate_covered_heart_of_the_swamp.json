@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#c:chocolates",
+    "worldsfinest:heart_of_the_swamp"
+  ],
+  "result": {
+    "id": "worldsfinestchocolate:chocolate_covered_heart_of_the_swamp"
+  }
+}

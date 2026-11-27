@@ -27,7 +27,7 @@ public class ItemMixin {
         ItemStack stack = player.getItemInHand(hand);
         if (stack.getItem() instanceof ShrunkenStructureItem) {
             WFCConfig.ThrowTypeConfig type = WFCConfig.THROW_SHRUNKEN_STRUCTURE_TYPE.get();
-            if (type != WFCConfig.ThrowTypeConfig.NONE && !player.isCrouching() && stack.get(WFDataComponents.SHRUNKEN_STRUCTURE) instanceof ShrunkenStructureRef struct) {
+            if (type != WFCConfig.ThrowTypeConfig.NONE && !player.isShiftKeyDown() && stack.get(WFDataComponents.SHRUNKEN_STRUCTURE) instanceof ShrunkenStructureRef struct) {
                 Vec3 vel;
                 if (type == WFCConfig.ThrowTypeConfig.STRENGTH_SCALED) {
                     double attackDamageScale = player.getAttributeValue(Attributes.ATTACK_DAMAGE);

@@ -25,7 +25,7 @@ public abstract class WFPymDiscItemMixin extends Item {
 
     @Inject(method = "use", at = @At("HEAD"), cancellable = true)
     private void wfc$use(Level level, Player player, InteractionHand hand, CallbackInfoReturnable<InteractionResult> cir) {
-        if (WFCConfig.ALLOW_SELF_DISC.get() && player.isCrouching() && player.getHealth() > 2) {
+        if (WFCConfig.ALLOW_SELF_DISC.get() && player.isShiftKeyDown() && player.getHealth() > 2) {
             var stack = player.getItemInHand(hand);
             if (!(stack.getItem() instanceof WFPymDiscItem disc)) return;
             PymParticleSizeChanger.changeSize(player, disc.shrink);

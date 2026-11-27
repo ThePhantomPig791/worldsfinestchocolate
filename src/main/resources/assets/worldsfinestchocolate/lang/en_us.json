@@ -4,8 +4,9 @@
   "item.worldsfinestchocolate.chocolate_covered_bullet_ant": "Chocolate-Covered Bullet Ant",
   "item.worldsfinestchocolate.chocolate_covered_carpenter_ant": "Chocolate-Covered Carpenter Ant",
   "item.worldsfinestchocolate.chocolate_covered_acorn": "Chocolate-Covered Acorn",
+  "item.worldsfinestchocolate.chocolate_covered_heart_of_the_swamp": "Chocolate-Covered Heart of the Swamp",
 
   "worldsfinestchocolate.configuration.throwShrunkenStructureType": "Throw Shrunken Structure Type",
   "worldsfinestchocolate.configuration.allowSelfDisc": "Allow Self Pym Disc",
-  "worldsfinestchocolate.configuration.reshrinkStructureLifetime": "Reshrink Structure Time"
+  "worldsfinestchocolate.configuration.reshrinkStructureTime": "Reshrink Structure Time"
 }
