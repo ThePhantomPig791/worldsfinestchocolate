@@ -41,6 +41,7 @@ public class ItemMixin {
                         player.level(), player.getX(), player.getY() + player.getEyeHeight() * 0.7f, player.getZ(),
                         stack
                 );
+                vel = vel.add(player.getDeltaMovement());
                 thrown.addDeltaMovement(vel.add(0.1 * (Math.random() - 1), 0.1 * (Math.random() - 1), 0.1 * (Math.random() - 1)));
                 player.level().addFreshEntity(thrown);
                 player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.PLAYERS, 0.8f, 0.15f + (player.level().getRandom().nextFloat() * 0.2f));

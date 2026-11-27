@@ -13,6 +13,10 @@ public class WFCConfig {
             .comment("If enabled, sneak + right-clicking a Pym Disc will apply the shrink/enlarge effect to yourself.")
             .define("allowSelfDisc", true);
 
+    public static final ModConfigSpec.IntValue RESHRINK_STRUCTURE_TIME = BUILDER
+            .comment("Up to this many ticks after enlarging a Shrunken Structure, you can throw a Shrink Disc at it to re-shrink it.")
+            .defineInRange("reshrinkStructureTime", 1800, 0, Integer.MAX_VALUE);
+
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     public enum ThrowTypeConfig {

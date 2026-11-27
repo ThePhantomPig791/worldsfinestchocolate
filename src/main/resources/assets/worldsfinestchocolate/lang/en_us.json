@@ -5,5 +5,6 @@
   "item.worldsfinestchocolate.chocolate_covered_carpenter_ant": "Chocolate-Covered Carpenter Ant",
 
   "worldsfinestchocolate.configuration.throwShrunkenStructureType": "Throw Shrunken Structure Type",
-  "worldsfinestchocolate.configuration.allowSelfDisc": "Allow Self Pym Disc"
+  "worldsfinestchocolate.configuration.allowSelfDisc": "Allow Self Pym Disc",
+  "worldsfinestchocolate.configuration.reshrinkStructureLifetime": "Reshrink Structure Time"
 }
