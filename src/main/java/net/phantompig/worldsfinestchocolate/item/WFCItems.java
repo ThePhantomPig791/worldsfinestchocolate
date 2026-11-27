@@ -29,6 +29,8 @@ public class WFCItems {
     public static final DeferredItem<Item> CHOCOLATE_COVERED_BULLET_ANT = ITEMS.registerItem("chocolate_covered_bullet_ant", props -> new Item(props.food(WFCFood.CHOCOLATE_ANT_PROPERTIES, WFCFood.CHOCOLATE_COVERED_BULLET_ANT_CONSUMABLE)));
     public static final DeferredItem<Item> CHOCOLATE_COVERED_CARPENTER_ANT = ITEMS.registerItem("chocolate_covered_carpenter_ant", props -> new Item(props.food(WFCFood.CHOCOLATE_ANT_PROPERTIES, WFCFood.CHOCOLATE_COVERED_CARPENTER_ANT_CONSUMABLE)));
 
+    public static final DeferredItem<Item> CHOCOLATE_COVERED_ACORN = ITEMS.registerItem("chocolate_covered_acorn", props -> new Item(props.food(WFCFood.CHOCOLATE_COVERED_ACORN_PROPERTIES, WFCFood.CHOCOLATE_CONSUMABLE)));
+
     public static void init(IEventBus bus) {
         ITEMS.register(bus);
     }
@@ -37,7 +39,8 @@ public class WFCItems {
     public static void addToCreativeModeTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.insertAfter(Items.COOKIE.getDefaultInstance(), CHOCOLATE_BAR.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(CHOCOLATE_BAR.toStack(), CHOCOLATE_COVERED_ANT.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(CHOCOLATE_BAR.toStack(), CHOCOLATE_COVERED_ACORN.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(CHOCOLATE_COVERED_ACORN.toStack(), CHOCOLATE_COVERED_ANT.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(CHOCOLATE_COVERED_ANT.toStack(), CHOCOLATE_COVERED_BULLET_ANT.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(CHOCOLATE_COVERED_BULLET_ANT.toStack(), CHOCOLATE_COVERED_CARPENTER_ANT.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
@@ -46,10 +49,10 @@ public class WFCItems {
     public static class WFCFood {
         public static final FoodProperties CHOCOLATE_PROPERTIES = (new FoodProperties.Builder()).nutrition(1).saturationModifier(1).alwaysEdible().build();
         public static final FoodProperties CHOCOLATE_ANT_PROPERTIES = (new FoodProperties.Builder()).nutrition(3).saturationModifier(1).alwaysEdible().build();
+        public static final FoodProperties CHOCOLATE_COVERED_ACORN_PROPERTIES = (new FoodProperties.Builder()).nutrition(1).saturationModifier(4).alwaysEdible().build();
 
         public static final Consumable CHOCOLATE_CONSUMABLE = Consumables.defaultFood().consumeSeconds(0.8f).onConsume(new ApplyStatusEffectsConsumeEffect(List.of(new MobEffectInstance(MobEffects.SPEED, 140, 2), new MobEffectInstance(MobEffects.SLOWNESS, 300, 0)))).build();
         public static final Consumable CHOCOLATE_COVERED_BULLET_ANT_CONSUMABLE = Consumables.defaultFood().consumeSeconds(0.8f).onConsume(new ApplyStatusEffectsConsumeEffect(List.of(new MobEffectInstance(MobEffects.SPEED, 120, 3), new MobEffectInstance(MobEffects.SLOWNESS, 180, 0), new MobEffectInstance(MobEffects.POISON, 60, 2)))).build();
         public static final Consumable CHOCOLATE_COVERED_CARPENTER_ANT_CONSUMABLE = Consumables.defaultFood().consumeSeconds(0.8f).onConsume(new ApplyStatusEffectsConsumeEffect(List.of(new MobEffectInstance(MobEffects.SPEED, 180, 6), new MobEffectInstance(MobEffects.SLOWNESS, 1000, 1)))).build();
-
     }
 }

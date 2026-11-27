@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#c:chocolates",
+    "worldsfinest:acorn"
+  ],
+  "result": {
+    "id": "worldsfinestchocolate:chocolate_covered_acorn"
+  }
+}
