@@ -43,14 +43,18 @@ public class RecentlyEnlargedStructureEntity extends Entity {
         }
     }
 
-    public void reshrink() {
-        // basically ripped from StructureShrinkerBlockEntity
-        if (!(this.level() instanceof ServerLevel level)) return;
+    public BoundingBox getCaptureBoundingBox() {
         var size = this.getSize();
         var halfSize = Vec3.atLowerCornerOf(size).scale(0.5);
         BlockPos corner1 = BlockPos.containing(this.position().subtract((int) halfSize.x, 0, (int) halfSize.z));
         BlockPos corner2 = BlockPos.containing(this.position().add((int) halfSize.x, size.getY() - 1, (int) halfSize.z));
-        BoundingBox box = new BoundingBox(corner1.getX(), corner1.getY(), corner1.getZ(), corner2.getX(), corner2.getY(), corner2.getZ());
+        return new BoundingBox(corner1.getX(), corner1.getY(), corner1.getZ(), corner2.getX(), corner2.getY(), corner2.getZ());
+    }
+
+    public void reshrink() {
+        // basically ripped from StructureShrinkerBlockEntity
+        if (!(this.level() instanceof ServerLevel level)) return;
+        BoundingBox box = this.getCaptureBoundingBox();
         ShrunkenStructure structure = ShrunkenStructure.capture(level, box);
         if (structure.isEmpty()) return;
 

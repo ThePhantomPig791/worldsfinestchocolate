@@ -16,8 +16,8 @@ public class ReshrinkRecentlyEnlargedStructureEvents {
     @SubscribeEvent
     public static void onProjectileImpact(ProjectileImpactEvent event) {
         if (event.getRayTraceResult() instanceof BlockHitResult hit && event.getProjectile() instanceof ThrownPymDisc disc && disc.getItem().getItem() instanceof WFPymDiscItem discItem && discItem.shrink) {
-            for (Entity e : disc.level().getEntities(disc, new AABB(hit.getBlockPos()).inflate(0.5f), e -> e instanceof RecentlyEnlargedStructureEntity)) {
-                if (e instanceof RecentlyEnlargedStructureEntity rese) rese.reshrink();
+            for (Entity e : disc.level().getEntities(disc, new AABB(hit.getBlockPos()).inflate(0.25f), e -> e instanceof RecentlyEnlargedStructureEntity)) {
+                if (e instanceof RecentlyEnlargedStructureEntity rese && rese.getCaptureBoundingBox().isInside(hit.getBlockPos())) rese.reshrink();
                 return;
             }
         }
