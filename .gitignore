@@ -11,6 +11,7 @@ out/
 !**/src/**/out/
 
 .run/
+.run_server/
 
 .apt_generated
 .classpath
@@ -28,6 +29,7 @@ bin/
 .DS_Store
 
 run/
+run_server/
 !**/src/**/run/
 **/src/generated/**/.cache/
 repo/
