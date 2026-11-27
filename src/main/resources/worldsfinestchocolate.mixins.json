@@ -3,7 +3,6 @@
   "package": "net.phantompig.worldsfinestchocolate.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "EntityMixin",
     "ItemMixin",
     "WFPymDiscItemMixin"
   ],
